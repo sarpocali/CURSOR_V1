@@ -1,0 +1,43 @@
+---
+alwaysApply: false
+---
+📐 Cursor MCP Project Rules – Kısa Manifesto
+	1.	Tek kök → Tüm MCP server’lar sadece bu kökte çalışır:
+/Users/sarpocali/Desktop/CURSOR_V1
+	2.	Tek config → MCP config sadece buradadır:
+.cursor/mcp.json
+	3.	Tek environment → Tüm API key’ler ve path ayarları sadece:
+.env
+Her MCP dotenv-cli -e /Users/sarpocali/Desktop/CURSOR_V1/.env ile çağrılır.
+	4.	Tek repo klasörü → Klonlanan MCP server’lar sadece:
+servers/
+	5.	Tek output klasörü → MCP çıktıları sadece:
+outputs/
+	6.	Mutlak path zorunluluğu → Hiçbir yerde . veya relative path yok, her zaman /Users/sarpocali/Desktop/CURSOR_V1/....
+	7.	Kurulum kuralı →
+	•	Önce uv ve node kurulu olacak
+	•	Sonra npm install -g veya uvx --from çalışacak
+	•	En sonda klasörler (servers/, outputs/) oluşturulacak
+	8.	Test şartı → Her MCP kurulumdan sonra --help ile test edilir; Cursor log’ları kontrol edilir.
+
+👉 Bu kurallar = her yeni MCP kurulumu tek proje env içinde, tek config ile, tek path mantığıyla çalışır → “tool access” hataları olmaz.
+📐 Cursor MCP Project Rules – Kısa Manifesto
+	1.	Tek kök → Tüm MCP server’lar sadece bu kökte çalışır:
+/Users/sarpocali/Desktop/CURSOR_V1
+	2.	Tek config → MCP config sadece buradadır:
+.cursor/mcp.json
+	3.	Tek environment → Tüm API key’ler ve path ayarları sadece:
+.env
+Her MCP dotenv-cli -e /Users/sarpocali/Desktop/CURSOR_V1/.env ile çağrılır.
+	4.	Tek repo klasörü → Klonlanan MCP server’lar sadece:
+servers/
+	5.	Tek output klasörü → MCP çıktıları sadece:
+outputs/
+	6.	Mutlak path zorunluluğu → Hiçbir yerde . veya relative path yok, her zaman /Users/sarpocali/Desktop/CURSOR_V1/....
+	7.	Kurulum kuralı →
+	•	Önce uv ve node kurulu olacak
+	•	Sonra npm install -g veya uvx --from çalışacak
+	•	En sonda klasörler (servers/, outputs/) oluşturulacak
+	8.	Test şartı → Her MCP kurulumdan sonra --help ile test edilir; Cursor log’ları kontrol edilir.
+
+👉 Bu kurallar = her yeni MCP kurulumu tek proje env içinde, tek config ile, tek path mantığıyla çalışır → “tool access” hataları olmaz.

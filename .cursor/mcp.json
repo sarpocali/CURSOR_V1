@@ -2,62 +2,216 @@
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@modelcontextprotocol/server-filesystem", "/Users/sarpocali/Desktop/CURSOR_V1"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/sarpocali/Desktop/CURSOR_V1"
+      ]
     },
     "sequential-thinking": {
-      "command": "npx", 
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@modelcontextprotocol/server-sequential-thinking"]
+      "command": "npx",
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
     },
     "taskmanager-kazuph": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@kazuph/mcp-taskmanager"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@kazuph/mcp-taskmanager"
+      ]
     },
     "taskmanager-mseep": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@mseep/mcp-taskmanager"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@mseep/mcp-taskmanager"
+      ]
     },
-    "puppeteer-hisma": {
+    "puppeteer-full": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@hisma/server-puppeteer"]
-    },
-    "puppeteer-community": {
-      "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "puppeteer-mcp-server"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        "/Users/sarpocali/Desktop/CURSOR_V1/.env",
+        "--",
+        "node",
+        "/Users/sarpocali/Desktop/CURSOR_V1/servers/puppeteer-extended/dist/index.js"
+      ]
     },
     "playwright": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@playwright/mcp"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@playwright/mcp"
+      ]
     },
     "context7": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@upstash/context7-mcp"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@upstash/context7-mcp"
+      ]
     },
     "figma": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "figma-mcp"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "figma-mcp"
+      ]
     },
     "desktop-commander": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@wonderwhy-er/desktop-commander"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@wonderwhy-er/desktop-commander"
+      ]
     },
     "google-search": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@mcp-for-dev/mcp-google-search"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@mcp-for-dev/mcp-google-search"
+      ]
     },
     "perplexity": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@mseep/perplexity-mcp"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@mseep/perplexity-mcp"
+      ]
     },
     "git": {
       "command": "npx",
-      "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@cyanheads/git-mcp-server"]
+      "args": [
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
+        "@cyanheads/git-mcp-server"
+      ]
     },
     "archon": {
-      "url": "http://localhost:8051/mcp"
+      "url": "http://localhost:8051/mcp",
+      "type": "http"
     },
-   "serena-full": {
-  "command": "uvx", 
-  "args": ["--from", "git+https://github.com/oraios/serena", "serena-mcp-server", "--project", "/Users/sarpocali/Desktop/CURSOR_V1", "--transport", "stdio"]
-   }
+    "serena-full": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena-mcp-server",
+        "--project",
+        "/Users/sarpocali/Desktop/CURSOR_V1",
+        "--transport",
+        "stdio"
+      ]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": [
+        "dotenv-cli",
+        "-e",
+        "/Users/sarpocali/Desktop/CURSOR_V1/.env",
+        "--",
+        "uvx",
+        "--from",
+        "mcp-server-fetch",
+        "mcp-server-fetch"
+      ]
+    },
+    "mistral-ocr": {
+      "command": "npx",
+      "args": [
+        "dotenv-cli",
+        "-e",
+        "/Users/sarpocali/Desktop/CURSOR_V1/.env",
+        "--",
+        "uvx",
+        "--from",
+        "file:///Users/sarpocali/Desktop/CURSOR_V1/servers/mistral-ocr-fixed",
+        "python",
+        "-m",
+        "mcp_mistral_ocr.main"
+      ]
+    },
+    "pdf-tools": {
+      "command": "npx",
+      "args": [
+        "dotenv-cli",
+        "-e",
+        "/Users/sarpocali/Desktop/CURSOR_V1/.env",
+        "--",
+        "uvx",
+        "--from",
+        "git+https://github.com/hanweg/mcp-pdf-tools",
+        "pdf-tools"
+      ]
+    },
+    "youtube-transcript": {
+      "command": "npx",
+      "args": [
+        "dotenv-cli",
+        "-e",
+        "/Users/sarpocali/Desktop/CURSOR_V1/.env",
+        "--",
+        "npx",
+        "-y",
+        "@kimtaeyoon83/mcp-server-youtube-transcript@latest"
+      ]
+    }
   }
 }
