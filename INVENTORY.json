@@ -1,0 +1,440 @@
+[
+  {
+    "tool_id": "filesystem",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@modelcontextprotocol/server-filesystem", "/Users/sarpocali/Desktop/CURSOR_V1"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": 0,
+      "port_open": {}
+    },
+    "help_excerpt": "No --help option, requires path argument",
+    "risks": ["Path traversal if not properly restricted"],
+    "fixes": []
+  },
+  {
+    "tool_id": "sequential-thinking",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "taskmanager-kazuph",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@kazuph/mcp-taskmanager"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "taskmanager-mseep",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@mseep/mcp-taskmanager"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "puppeteer-full",
+    "kind": "node-local",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", "/Users/sarpocali/Desktop/CURSOR_V1/.env", "--", "node", "/Users/sarpocali/Desktop/CURSOR_V1/servers/puppeteer-extended/dist/index.js"],
+    "env_keys_used": [
+      "PUPPETEER_EXECUTABLE_PATH",
+      "PUPPETEER_USER_DATA_DIR",
+      "PUPPETEER_DOWNLOAD_DIR",
+      "PUPPETEER_OUTPUT_PATH",
+      "PUPPETEER_HAR_PATH",
+      "PUPPETEER_TRACE_PATH",
+      "PUPPETEER_ARGS",
+      "PUPPETEER_HEADLESS",
+      "PUPPETEER_DEVTOOLS"
+    ],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "/Users/sarpocali/Desktop/CURSOR_V1/servers/puppeteer-extended",
+      "inputs": "N/A",
+      "outputs": "/Users/sarpocali/Desktop/CURSOR_V1/outputs/puppeteer_*",
+      "ports": []
+    },
+    "binaries": {"node": "/usr/local/bin/node", "npx": "/usr/local/bin/npx"},
+    "versions": {"node": "v22.18.0", "npx": "10.9.3"},
+    "health_checks": {
+      "help_exit_code": 0,
+      "port_open": {},
+      "dist_exists": true
+    },
+    "help_excerpt": "dist/index.js exists and ready",
+    "risks": ["Chrome executable path hardcoded to macOS path"],
+    "fixes": []
+  },
+  {
+    "tool_id": "playwright",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@playwright/mcp"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0", "playwright-mcp": "0.0.34"},
+    "health_checks": {
+      "help_exit_code": 0,
+      "port_open": {}
+    },
+    "help_excerpt": "Version 0.0.34",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "context7",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@upstash/context7-mcp"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "figma",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "figma-mcp"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "desktop-commander",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@wonderwhy-er/desktop-commander"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "timeout",
+      "port_open": {}
+    },
+    "help_excerpt": "No --help option, runs as service",
+    "risks": ["Shell command execution capability"],
+    "fixes": []
+  },
+  {
+    "tool_id": "google-search",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@mcp-for-dev/mcp-google-search"],
+    "env_keys_used": ["GOOGLE_API_KEY", "GOOGLE_CSE_ID", "GOOGLE_SEARCH_ENGINE_ID"],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": ["API key exposure if logs not secured"],
+    "fixes": []
+  },
+  {
+    "tool_id": "perplexity",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@mseep/perplexity-mcp"],
+    "env_keys_used": ["PERPLEXITY_API_KEY"],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": ["API key exposure if logs not secured"],
+    "fixes": []
+  },
+  {
+    "tool_id": "git",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", ".env", "--", "npx", "-y", "@cyanheads/git-mcp-server"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": ["Git operations on filesystem"],
+    "fixes": []
+  },
+  {
+    "tool_id": "archon",
+    "kind": "http",
+    "command": "docker-compose",
+    "args": ["up", "-d", "--build"],
+    "env_keys_used": [
+      "SUPABASE_URL",
+      "SUPABASE_SERVICE_KEY",
+      "DATABASE_URL",
+      "OPENAI_API_KEY",
+      "ANTHROPIC_API_KEY",
+      "ARCHON_SERVER_PORT",
+      "ARCHON_MCP_PORT",
+      "ARCHON_AGENTS_PORT",
+      "ARCHON_UI_PORT"
+    ],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "/Users/sarpocali/Desktop/CURSOR_V1/servers/archon",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": [8051, 8181, 8052, 3737]
+    },
+    "binaries": {"docker": "/opt/homebrew/bin/docker", "docker-compose": "/opt/homebrew/bin/docker-compose"},
+    "versions": {"docker": "28.3.3"},
+    "health_checks": {
+      "help_exit_code": "N/A",
+      "port_open": {"8051": true, "8181": true, "8052": true, "3737": true},
+      "mcp_endpoint": true,
+      "docker_running": true,
+      "containers_healthy": ["Archon-MCP", "Archon-Server", "Archon-Agents", "Archon-UI"]
+    },
+    "help_excerpt": "✅ All 4 microservices running and healthy",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "serena-full",
+    "kind": "python-uvx",
+    "command": "uvx",
+    "args": ["--from", "git+https://github.com/oraios/serena", "serena-mcp-server", "--project", "/Users/sarpocali/Desktop/CURSOR_V1", "--transport", "stdio"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "git+https://github.com/oraios/serena",
+      "inputs": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"uvx": "/opt/homebrew/bin/uvx", "python3": "/usr/local/bin/python3"},
+    "versions": {"uvx": "0.8.12", "python3": "3.13.7"},
+    "health_checks": {
+      "help_exit_code": 0,
+      "port_open": {}
+    },
+    "help_excerpt": "Usage: serena-mcp-server [OPTIONS]\\n\\n  Starts the Serena MCP server.\\n\\nOptions:\\n  --project [PROJECT_NAME|PROJECT_PATH]",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "fetch",
+    "kind": "python-uvx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", "/Users/sarpocali/Desktop/CURSOR_V1/.env", "--", "uvx", "--from", "mcp-server-fetch", "mcp-server-fetch"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "pypi-package",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"uvx": "/opt/homebrew/bin/uvx", "npx": "/usr/local/bin/npx"},
+    "versions": {"uvx": "0.8.12", "npx": "10.9.3"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "mistral-ocr",
+    "kind": "python-module",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", "/Users/sarpocali/Desktop/CURSOR_V1/.env", "--", "uvx", "--from", "file:///Users/sarpocali/Desktop/CURSOR_V1/servers/mistral-ocr-fixed", "python", "-m", "mcp_mistral_ocr.main"],
+    "env_keys_used": ["MISTRAL_API_KEY", "OCR_DIR", "INPUT_DIR"],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "/Users/sarpocali/Desktop/CURSOR_V1/servers/mistral-ocr-fixed",
+      "inputs": "/Users/sarpocali/Desktop/CURSOR_V1/raw_data/ocr-pdf",
+      "outputs": "/Users/sarpocali/Desktop/CURSOR_V1/outputs/mistral_ocr",
+      "ports": []
+    },
+    "binaries": {"uvx": "/opt/homebrew/bin/uvx", "python3": "/usr/local/bin/python3", "npx": "/usr/local/bin/npx"},
+    "versions": {"uvx": "0.8.12", "python3": "3.13.7", "npx": "10.9.3"},
+    "health_checks": {
+      "help_exit_code": "timeout",
+      "port_open": {}
+    },
+    "help_excerpt": "Tool hangs on --help",
+    "risks": ["Tool may have issues with initialization"],
+    "fixes": ["Check mcp_mistral_ocr.main module implementation"]
+  },
+  {
+    "tool_id": "pdf-tools",
+    "kind": "python-uvx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", "/Users/sarpocali/Desktop/CURSOR_V1/.env", "--", "uvx", "--from", "git+https://github.com/hanweg/mcp-pdf-tools", "pdf-tools"],
+    "env_keys_used": [],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "git+https://github.com/hanweg/mcp-pdf-tools",
+      "inputs": "N/A",
+      "outputs": "N/A",
+      "ports": []
+    },
+    "binaries": {"uvx": "/opt/homebrew/bin/uvx", "npx": "/usr/local/bin/npx"},
+    "versions": {"uvx": "0.8.12", "npx": "10.9.3"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": [],
+    "fixes": []
+  },
+  {
+    "tool_id": "youtube-transcript",
+    "kind": "node-npx",
+    "command": "npx",
+    "args": ["dotenv-cli", "-e", "/Users/sarpocali/Desktop/CURSOR_V1/.env", "--", "npx", "-y", "@kimtaeyoon83/mcp-server-youtube-transcript@latest"],
+    "env_keys_used": ["TRANSCRIPT_OUTPUT_PATH"],
+    "resolved_paths": {
+      "project_root": "/Users/sarpocali/Desktop/CURSOR_V1",
+      "server_path": "npm-package",
+      "inputs": "N/A",
+      "outputs": "/Users/sarpocali/Desktop/CURSOR_V1/outputs/youtube_transcripts",
+      "ports": []
+    },
+    "binaries": {"npx": "/usr/local/bin/npx", "node": "/usr/local/bin/node"},
+    "versions": {"npx": "10.9.3", "node": "v22.18.0"},
+    "health_checks": {
+      "help_exit_code": "unknown",
+      "port_open": {}
+    },
+    "help_excerpt": "Not tested",
+    "risks": [],
+    "fixes": []
+  }
+]
